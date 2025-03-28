@@ -132,7 +132,7 @@ export default function Navbar() {
     <nav
       className={`sticky w-full z-50 transition-all duration-300 ${
         scroll ? "bg-[#233100]/95 shadow-md" : "bg-[#233100]"
-      } ${visible ? "top-4" : "-top-24"}`}
+      }`}
     >
       <div className="flex justify-between items-center max-w-[1450px] mx-auto px-4 py-4">
         <div className="w-40">
