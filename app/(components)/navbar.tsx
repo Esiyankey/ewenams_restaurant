@@ -104,10 +104,10 @@ export default function Navbar() {
     const currentScrollPos = window.scrollY
 
     // Determine if scrolling up or down
-    const isScrollingUp = prevScrollPos > currentScrollPos
+    // const isScrollingUp = prevScrollPos > currentScrollPos?
 
     // Set visibility based on scroll direction and position
-    setVisible(isScrollingUp || currentScrollPos < 10)
+   
 
     // Set scroll state for styling
     setScroll(currentScrollPos > 50)
