@@ -130,14 +130,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`sticky w-full z-50 transition-all duration-300 ${
         scroll ? "bg-[#233100]/95 shadow-md" : "bg-[#233100]"
       } ${visible ? "top-4" : "-top-24"}`}
     >
       <div className="flex justify-between items-center max-w-[1450px] mx-auto px-4 py-4">
         <div className="w-40">
           <Image
-            src={`${scroll ? "/images/colored-logo.png" : "/images/logo-remove.png"}`}
+            src="/images/logo-remove.png"
             alt="logo here"
             width={150}
             height={50}
@@ -180,7 +180,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#2f3d0b] shadow-lg rounded-b-lg overflow-hidden transition-all duration-300 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden  left-0 right-0 bg-[#2f3d0b] shadow-lg rounded-b-lg overflow-hidden transition-all duration-300 max-h-[80vh] overflow-y-auto">
           <div className="flex flex-col divide-y divide-[#496503]/30">
             {navLinks.map((link) => (
               <Link
