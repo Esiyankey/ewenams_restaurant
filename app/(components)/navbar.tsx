@@ -90,7 +90,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scroll, setScroll] = useState(false)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [visible, setVisible] = useState(true)
+ 
 
   const navLinks = [
     { name: "About", href: "/about" },
